@@ -6,7 +6,7 @@ if __name__ == "__main__":
     result_1 = a + b
     result_2 = a - b
     result_3 = a * b
-    result_4 = a / b
+    result_4 = int(a / b)
 
 print("{} + {} = {}".format(a, b, result_1))
 print("{} - {} = {}".format(a, b, result_2))
