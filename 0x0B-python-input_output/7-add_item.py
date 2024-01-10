@@ -13,10 +13,10 @@ args = sys.argv[1:]
 file = "add_item.json"
 
 if os.path.exists(file):
-    plist = load_from_json_file(file)
+    lists = load_from_json_file(file)
 else:
-    plist = []
+    lists = []
 
-plist += args
+lists += args
 
-save_to_json_file(plist, file)
+save_to_json_file(lists, file)
