@@ -9,10 +9,10 @@ args = sys.argv[1:]
 file = "add_item.json"
 
 if os.path.exists(file):
-    list = load_from_json_file(file)
+    lists = load_from_json_file(file)
 else:
-    list = []
+    lists = []
 
-list += args
+lists += args
 
-save_to_json_file(list, file)
+save_to_json_file(lists, file)
